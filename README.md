@@ -4,6 +4,10 @@ The softcite-extractions-oa dataset is a collection of ML-identified mentions of
 
 This work used JetStream 2 at Indiana through allocation CIS220172 from the Advanced Cyberinfrastructure Coordination Ecosystem: Services & Support (ACCESS) program, which is supported by National Science Foundation grants #2138259, #2138286, #2138307, #2137603, and #2138296.
 
+## The data
+
+The data files are hosted outside github, on Zenodo at <https://zenodo.org/records/15066399>.  This GitHub repo is documentation and hosts the files used to convert the data from json into tabular format in parquet.
+
 ## The data model
 
 A __paper__ can contain many __mentions__, each of which was found in a full-text snippet of __context__, and extracts the (raw and normalized) __software name__ , __version number__, __creator__, __url__, as well as associated __citation__ to the reference list of the paper.
@@ -16,7 +20,7 @@ Each __mention__ has multiple __purpose assessments__ about the relationship bet
 
 ### Getting the Parquet files
 
-Parquet files are available from Zenodo.  There are three sub-folders:
+Parquet files are available from Zenodo at <https://zenodo.org/records/15066399>.  There are three sub-folders:
 
 ```
 full_dataset
