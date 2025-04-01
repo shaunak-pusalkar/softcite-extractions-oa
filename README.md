@@ -40,6 +40,11 @@ purpose_assessments.pdf.parquet
 For these examples, the 5% subset of the data is used.
 These examples require the `tidyverse` and `arrow` packages to run, but should otherwise work as-is.
 
+```R
+library(tidyverse)
+library(arrow)
+```
+
 1. How many papers mention OpenStreetMap?
 
 This example filters by `software_normalied` as this is less noisy than `software_raw`.
