@@ -10,7 +10,7 @@ The data files are hosted outside github, on Zenodo at <https://zenodo.org/recor
 
 ### Reporting extraction errors/omissions 
 
-These extractions are the result of a machine learning model; they are probabilistic and will have both false positives and false negatives. The performance of the model shows f-scores around 0.8 (see <https://doi.org/10.1145/3459637.3481936> for full details, and <https://github.com/softcite/#papers> for more details, including the annotation scheme used in the underlying gold standard dataset.
+These extractions are the result of a machine learning model; they are probabilistic and will have both false positives and false negatives. The performance of the model shows f-scores around 0.8 (see <https://doi.org/10.1145/3459637.3481936> for full details, and <https://github.com/softcite/#papers> for more details, including the annotation scheme used in the underlying gold standard dataset. See <https://github.com/softcite/> for the training data, models, tools, and papers.
 
 Please create [Issues](https://github.com/softcite/softcite-extractions-oa/issues) in this repository when you encounter problems in the dataset. That said, we can't correct these manually, but any explanation you can give will help us improve the training data and improve the model. Please also share transformations you have to apply to the dataset in your work with it.
 
