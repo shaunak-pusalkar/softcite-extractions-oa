@@ -6,7 +6,7 @@ This work used JetStream 2 at Indiana through allocation CIS220172 from the Adva
 
 ## The data
 
-The data files are hosted outside github, on Zenodo at <https://zenodo.org/records/15066399>.  This GitHub repo is documentation and hosts the files used to convert the data from json into tabular format in parquet.
+The data files are hosted outside github, on Zenodo at <https://zenodo.org/records/15149379>.  This GitHub repo is documentation and hosts the files used to convert the data from json into tabular format in parquet.
 
 ### Reporting extraction errors/omissions 
 
