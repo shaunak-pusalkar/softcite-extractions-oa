@@ -26,7 +26,7 @@ Each __mention__ has multiple __purpose assessments__ about the relationship bet
 
 ### Getting the Parquet files
 
-Parquet files are available from Zenodo at <https://zenodo.org/records/15066399>.  There are three sub-folders:
+Parquet files are available from Zenodo at <https://zenodo.org/records/15149379>.  There are three sub-folders:
 
 ```
 full_dataset
