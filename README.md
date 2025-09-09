@@ -46,6 +46,7 @@ purpose_assessments.pdf.parquet
 For these examples, the 5% subset of the data is used. First 3 examples are shown in R and then the same 3 examples are shown in Python.
 
 Examples in R
+
 These examples require the `tidyverse` and `arrow` packages to run, but should otherwise work as-is.
 
 ```R
@@ -146,6 +147,7 @@ The "document" scope is appropriate here as we're interested in whether the soft
 # ℹ 79,720 more rows
 # ℹ Use `print(n = ...)` to see more rows
 ```
+
 Examples in Python
 
 Setup & Load Libraries and load data
