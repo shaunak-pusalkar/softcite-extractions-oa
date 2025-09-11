@@ -1,6 +1,6 @@
 """
 SoftCite dataset subsampling tool in Python.
-Replicates the Go version functionality in Python.
+Replicates the Go version functionality in Python
 """
 
 import os
