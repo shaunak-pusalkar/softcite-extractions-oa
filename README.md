@@ -148,7 +148,7 @@ The "document" scope is appropriate here as we're interested in whether the soft
 # ℹ Use `print(n = ...)` to see more rows
 ```
 
-More examples in Python can be found here : [Python_Examples.md]https://github.com/shaunak-pusalkar/softcite-extractions-oa/blob/8b03ac84e6fa2e5d4f7a07458f793aaa82a2e1f6/Python_Examples.md
+More examples in Python can be found here : [Python_Examples.md)](https://github.com/shaunak-pusalkar/softcite-extractions-oa/blob/8b03ac84e6fa2e5d4f7a07458f793aaa82a2e1f6/Python_Examples.md)
 
 ## Additional details and provenance
 
