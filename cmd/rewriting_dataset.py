@@ -8,7 +8,7 @@ from pathlib import Path
 
 # === CONFIG === (pls modify the path as per the need)
 input_path = Path("/.../softcite-extractions-oa-data/.../papers.parquet")
-output_path = Path("/.../softcite-extractions-oa-data-1.0.1/.../papers.parquet")
+output_path = Path("/.../softcite-extractions-oa-data-1.0.2/.../papers.parquet")
 
 # === LOAD FULL DATA INTO MEMORY ===
 print("Loading full dataset into memory...")
@@ -18,16 +18,17 @@ print(f"Loaded shape: {df.shape}")
 # === CLEAN COLUMN NAMES ===
 df.columns = [c.strip() for c in df.columns]
 
-# === HANDLE NaNs AND FIX DTYPES ===
+# === FIX DTYPES ===
 for col in df.columns:
     dtype_str = str(df[col].dtype)
     
-    # Replace NaN in integer-like columns (common issue from Parquet-Go)
+     # Integer columns: must not contain NaNs
     if "uint" in dtype_str or "int" in dtype_str:
-        # If numeric but NaNs exist, replace with 0 (safe default)
         if df[col].isna().any():
-            print(f"⚠️  NaNs detected in integer column '{col}', replacing with 0.")
-            df[col] = df[col].fillna(0)
+            raise ValueError(
+                f"NaNs found in integer column '{col}'. "
+                "Refusing to coerce due to semantic ambiguity."
+            )
         
         # Convert unsigned to signed int64
         df[col] = df[col].astype("int64")
